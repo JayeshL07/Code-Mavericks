@@ -5,114 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mental Health Support</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-
-      .logods {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        min-height: 100px;
-      }
-
-      .separation {
-        background-color: black;
-        height: 1px;
-      }
-
-      .navbar {
-        min-height: 67px;
-        border: 2px solid black;
-      }
-
-      ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        padding: 20px;
-        gap: 20px;
-      }
-
-      li {
-        padding: 10px;
-        /* border: 2px solid black; */
-      }
-
-      li:hover {
-        background-color: blanchedalmond;
-        cursor: pointer;
-        border-radius: 20px;
-      }
-
-      .im {
-        background-image: url(bg1.jpg);
-        height: 80vh;
-        position: relative;
-        background-size: max(1200px, 100vw);
-        background-position: center center;
-        background-repeat: no-repeat;
-      }
-
-      .box {
-        height: 100px;
-        width: 300px;
-        position: relative;
-        left: 70px;
-        top: 80px;
-      }
-
-      p {
-        font-size: 25px;
-        font-weight: bold;
-        color: rgb(45, 11, 11);
-      }
-
-      .box2 {
-        height: 600px;
-        border: 2px solid black;
-      }
-
-      footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        /* color: white; */
-        max-width: 60vw;
-        margin: auto;
-        padding: 34px;
-      }
-
-      .footer-item {
-        display: flex;
-        flex-direction: column;
-        gap: 23px;
-        margin: 30px;
-      }
-
-      footer a {
-        font-size: 14px;
-        text-decoration: none;
-        color: rgb(189, 92, 124);
-        /* color: white; */
-      }
-
-      .social-menu li {
-        border: 1px solid #27627e;
-        border-radius: 50px;
-        width: 48px;
-        height: 48px;
-        display: block;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        top: 0;
-        transition: 0.5s;
-      }
-    </style>
   </head>
 
   <body>
@@ -201,6 +93,7 @@
         <a href="faq">Legal Notices</a>
       </div>
       <div class="social-menu">
+        <ul>
         <li>
           <a
             href="https://www.facebook.com/ClinicalPartners"
@@ -218,7 +111,7 @@
             href="https://twitter.com/clinicalpartnrs"
             target="_blank"
             rel="noopener noreferrer"
-            ><img
+            ><img height="30"
               src="https://www.clinical-partners.co.uk/templates/g5_hydrogen/custom/images/cp-tw.png"
               alt="twitter"
           /></a>
@@ -228,11 +121,12 @@
             href="https://www.linkedin.com/company/clinical-partners/"
             target="_blank"
             rel="noopener noreferrer"
-            ><img
+            ><img height="30"
               src="	https://www.clinical-partners.co.uk/templates/g5_hydrogen/custom/images/cp-li.png"
               alt="linkedin"
           /></a>
         </li>
+    </ul>
       </div>
     </footer>
     <script src="script.js"></script>

@@ -1,3 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logods {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+}
+
+.separation {
+  background-color: black;
+  height: 1px;
+}
+
+.navbar {
+  min-height: 67px;
+  border: 2px solid black;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 20px;
+  gap: 20px;
+}
+
+li {
+  padding: 10px;
+  /* border: 2px solid black; */
+}
+
+.navbar ul li:hover {
+  background-color: blanchedalmond;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.im {
+  background-image: url(bg1.jpg);
+  height: 80vh;
+  position: relative;
+  background-size: max(1200px, 100vw);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.box {
+  height: 100px;
+  width: 300px;
+  position: relative;
+  left: 70px;
+  top: 80px;
+}
+
+p {
+  font-size: 20px;
+  /* font-weight: bold; */
+  color: rgb(45, 11, 11);
+}
+
+.box2 {
+  height: 600px;
+  border: 2px solid black;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* color: white; */
+  max-width: 60vw;
+  margin: auto;
+  padding: 34px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  margin: 0px 20px;
+  position: relative;
+  left: -50px;
+}
+
+footer a {
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(189, 92, 124);
+  /* color: white; */
+}
+
+.social-menu ul li a {
+  border: 1px solid #27627E;
+  border-radius: 50px;
+  width: 48px;
+  height: 48px;
+  /* display: block; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  transition: 0.5s;
+}
+.social-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 20px;
+  gap: 0;
+}
+
 .bloghead{
     padding: 30px;
 }
@@ -6,13 +123,20 @@
     flex-direction: row;
     align-items: center;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    
     overflow: hidden;
     transition: all 0.3s ease-in-out;
+    padding: 10px;
+    border-radius: 20px;
   }
   
   .blog-card:hover {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  }
+  .blogs{
+    padding-left: 30px;
+    padding-right: 30px;
+    
   }
   
   .blog-image {
@@ -20,6 +144,7 @@
     width: 300px;
     height: auto;
     object-fit: cover;
+    border-radius: 10px;
   }
   
   .blog-content {
@@ -57,3 +182,15 @@
   .read-more-button:hover {
     background-color: #45a049;
   }
+  .blog{
+    padding-left: 70px;
+    padding-right: 70px;
+    border: 2px solid black;
+  }
+.blog h1{
+  padding: 50px;
+}
+.br1{
+  padding: 50px;
+  min-height: 1000px;
+}
