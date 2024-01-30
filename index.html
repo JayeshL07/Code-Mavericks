@@ -1,194 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mental Health Support</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
-        .logods {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            min-height: 100px;
-        }
+      .logods {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100px;
+      }
 
-        .separation {
-            background-color: black;
-            height: 1px;
-        }
+      .separation {
+        background-color: black;
+        height: 1px;
+      }
 
-        .navbar {
-            min-height: 67px;
-            border: 2px solid black;
+      .navbar {
+        min-height: 67px;
+        border: 2px solid black;
+      }
 
-        }
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 20px;
+        gap: 20px;
+      }
 
-        ul {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            list-style: none;
-            padding: 20px;
-            gap: 20px;
-        }
+      li {
+        padding: 10px;
+        /* border: 2px solid black; */
+      }
 
-        li {
-            padding: 10px;
-            /* border: 2px solid black; */
+      li:hover {
+        background-color: blanchedalmond;
+        cursor: pointer;
+        border-radius: 20px;
+      }
 
-        }
+      .im {
+        background-image: url(bg1.jpg);
+        height: 80vh;
+        position: relative;
+        background-size: max(1200px, 100vw);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
 
-        li:hover {
-            background-color: blanchedalmond;
-            cursor: pointer;
-            border-radius: 20px;
-        }
+      .box {
+        height: 100px;
+        width: 300px;
+        position: relative;
+        left: 70px;
+        top: 80px;
+      }
 
-        .im {
-            background-image: url(bg1.jpg);
-            height: 80vh;
-            position: relative;
-            background-size: max(1200px, 100vw);
-            background-position: center center;
-            background-repeat: no-repeat;
-        }
+      p {
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(45, 11, 11);
+      }
 
-        .box {
-            height: 100px;
-            width: 300px;
-            position: relative;
-            left: 70px;
-            top: 80px;
-        }
+      .box2 {
+        height: 600px;
+        border: 2px solid black;
+      }
 
-        p {
-            font-size: 25px;
-            font-weight: bold;
-            color: rgb(45, 11, 11)
-        }
+      footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* color: white; */
+        max-width: 60vw;
+        margin: auto;
+        padding: 34px;
+      }
 
-        .box2 {
-            height: 600px;
-            border: 2px solid black;
-        }
+      .footer-item {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        margin: 30px;
+      }
 
-        footer {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            /* color: white; */
-            max-width: 60vw;
-            margin: auto;
-            padding: 34px;
-        }
+      footer a {
+        font-size: 14px;
+        text-decoration: none;
+        color: rgb(189, 92, 124);
+        /* color: white; */
+      }
 
-        .footer-item {
-            display: flex;
-            flex-direction: column;
-            gap: 23px;
-            margin: 30px;
-        }
-
-        footer a {
-            font-size: 14px;
-            text-decoration: none;
-            color: rgb(189, 92, 124);
-            /* color: white; */
-        }
-
-        .social-menu li {
-            border: 1px solid #27627E;
-            border-radius: 50px;
-            width: 48px;
-            height: 48px;
-            display: block;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            top: 0;
-            transition: 0.5s;
-        }
+      .social-menu li {
+        border: 1px solid #27627e;
+        border-radius: 50px;
+        width: 48px;
+        height: 48px;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        transition: 0.5s;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="top">
-        <div class="logods">
-            <img src="menu.svg" alt="">
-            <img src="https://www.clinical-partners.co.uk/images/2021/clinical-partners-logo.png" width="200" alt="">
-            <div class="btn">
-                <button class="sign-btn">SIGN IN</button>
-                <button class="cr-btn">CAREERS</button>
-            </div>
+      <div class="logods">
+        <img src="menu.svg" alt="" />
+        <img
+          src="https://www.clinical-partners.co.uk/images/2021/clinical-partners-logo.png"
+          width="200"
+          alt=""
+        />
+        <div class="btn">
+          <button class="sign-btn">SIGN IN</button>
+          <button class="cr-btn">CAREERS</button>
         </div>
-        <div class="separation"></div>
-        <nav class="navbar">
-            <ul>
-                <li>For adults</li>
-                <li>For children</li>
-                <li>About</li>
-                <li>Online Tests</li>
-                <li>Careers</li>
-                <li>Blog</li>
-                <li>NHS Services</li>
-                <li>Contact Us</li>
-            </ul>
-        </nav>
+      </div>
+      <div class="separation"></div>
+      <nav class="navbar">
+        <ul>
+          <li>For adults</li>
+          <li>For children</li>
+          <li>About</li>
+          <li>Online Tests</li>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>NHS Services</li>
+          <li>Contact Us</li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <div class="im">
-            <div class="box">
-                <p>“About a third of my cases are suffering from no clinically definable neurosis, but from the
-                    senselessness and emptiness of their lives. This can be defined as the general neurosis of our
-                    times.”
-                    ― Carl Gustav Jung</p>
+      <div class="im">
+        <div class="box">
+          <p>
+            “About a third of my cases are suffering from no clinically
+            definable neurosis, but from the senselessness and emptiness of
+            their lives. This can be defined as the general neurosis of our
+            times.” ― Carl Gustav Jung
+          </p>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="blogs">
+            <h1 class="bloghead">Mental Health Blogs/Articles</h1>
+
+          <div class="blog-card">
+            <img
+              src="https://media.post.rvohealth.io/wp-content/uploads/sites/4/2021/03/PC_DEI-Thumbnail-732x549-1-732x549.jpg"
+              alt="Blog Image"
+              class="blog-image"
+            />
+            <div class="blog-content">
+              <h2 class="blog-title">Blog Title</h2>
+              <p class="blog-description">
+                Blog description. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+              </p>
+              <button class="read-more-button">Read More</button>
             </div>
-
+          </div>
         </div>
-        <div class="box2">
-
-        </div>
+      </div>
     </main>
     <footer>
-        <div class="footer-item">
-            <a href="faq">FAQ</a>
-            <a href="faq">Account</a>
-            <a href="faq">Investor Relations</a>
-            <a href="faq">Ways to Watch</a>
-            <a href="faq">Privacy</a>
-        </div>
-        <div class="footer-item">
-            <a href="faq">Corporate Information</a>
-            <a href="faq">Speed Test</a>
-            <a href="faq">Only on Netflix</a>
-            <a href="faq">Help Centre</a>
-            <a href="faq">Media Centre</a>
-        </div>
-        <div class="footer-item">
-            <a href="faq">Jobs</a>
-            <a href="faq">Terms of Uset</a>
-            <a href="faq">Cookie Preferences</a>
-            <a href="faq">Contact Us</a>
-            <a href="faq">Legal Notices</a>
-        </div>
-        <div class="social-menu">
-            <li><a href="https://www.facebook.com/ClinicalPartners" target="_blank" rel="noopener noreferrer">
-                <img src="https://www.clinical-partners.co.uk/templates/g5_hydrogen/custom/images/cp-fb.png" width="17" alt=""></a></li>
-            <li><a href="https://twitter.com/clinicalpartnrs" target="_blank" rel="noopener noreferrer"><img src="https://www.clinical-partners.co.uk/templates/g5_hydrogen/custom/images/cp-tw.png" alt="twitter"></a> </li>
-            <li><a href="https://www.linkedin.com/company/clinical-partners/" target="_blank" rel="noopener noreferrer"><img src="	https://www.clinical-partners.co.uk/templates/g5_hydrogen/custom/images/cp-li.png" alt="linkedin"></a></li>
-            
-                  
-        </div>
-
+      <div class="footer-item">
+        <a href="faq">FAQ</a>
+        <a href="faq">Account</a>
+        <a href="faq">Investor Relations</a>
+        <a href="faq">Ways to Watch</a>
+        <a href="faq">Privacy</a>
+      </div>
+      <div class="footer-item">
+        <a href="faq">Corporate Information</a>
+        <a href="faq">Speed Test</a>
+        <a href="faq">Only on Netflix</a>
+        <a href="faq">Help Centre</a>
+        <a href="faq">Media Centre</a>
+      </div>
+      <div class="footer-item">
+        <a href="faq">Jobs</a>
+        <a href="faq">Terms of Uset</a>
+        <a href="faq">Cookie Preferences</a>
+        <a href="faq">Contact Us</a>
+        <a href="faq">Legal Notices</a>
+      </div>
+      <div class="social-menu">
+        <li>
+          <a
+            href="https://www.facebook.com/ClinicalPartners"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://www.clinical-partners.co.uk/templates/g5_hydrogen/custom/images/cp-fb.png"
+              width="17"
+              alt=""
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/clinicalpartnrs"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.clinical-partners.co.uk/templates/g5_hydrogen/custom/images/cp-tw.png"
+              alt="twitter"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/company/clinical-partners/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="	https://www.clinical-partners.co.uk/templates/g5_hydrogen/custom/images/cp-li.png"
+              alt="linkedin"
+          /></a>
+        </li>
+      </div>
     </footer>
-
-
-</body>
-
+  </body>
 </html>

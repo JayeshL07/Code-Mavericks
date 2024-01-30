@@ -1,4 +1,59 @@
-body{
-
-    background-color: black;
+.bloghead{
+    padding: 30px;
 }
+.blog-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .blog-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-image {
+    padding-left: 100px;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .blog-content {
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .blog-title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .blog-description {
+    margin: 10px 0 20px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Change this to the number of lines you want to show */
+    -webkit-box-orient: vertical;
+  }
+  
+  .read-more-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .read-more-button:hover {
+    background-color: #45a049;
+  }
