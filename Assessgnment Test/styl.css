@@ -1,0 +1,35 @@
+/* body{
+
+   position: absolute;
+   top:  50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   height: auto;
+   width: 750px;
+   border: 2px solid black;
+   padding: 100px;
+
+}
+*/
+
+body{
+    padding: 70px;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ddd;
+    
+    overflow: hidden;
+    transition: all 0.3s ease-in-out
+    /* border-radius: 20px; */
+    
+
+}
+
+  div{
+
+     
+  }
