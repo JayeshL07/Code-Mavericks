@@ -64,7 +64,7 @@ p {
 }
 
 .box2 {
-  height: 600px;
+  height: auto;
   border: 2px solid black;
 }
 
@@ -193,4 +193,9 @@ footer a {
 .br1{
   padding: 50px;
   min-height: 1000px;
+}
+
+.hidden {
+  display: none;
+  padding-bottom: 20px;
 }
