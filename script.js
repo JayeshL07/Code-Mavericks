@@ -16,3 +16,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  var blogLink = document.querySelector('a[href="#blogs-section"]');
+
+  blogLink.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    var blogsSection = document.getElementById("blogs-section");
+
+    // Scroll smoothly to the blogs section
+    blogsSection.scrollIntoView({ behavior: "smooth" });
+  });
+});
