@@ -108,8 +108,10 @@
 </head>
 
 <body>
-    <h1>Depression Screening</h1>
+    <div class="cont">
+        <h1>Depression Screening</h1>
     <p>For each question, please select the option that best describes your experience over the past two weeks:</p>
+    </div>
 
     <div id="question-container" style="display: none;">
         <h2 id="question-text"></h2>
@@ -118,7 +120,9 @@
         <input type="button" value="Next Question" onclick="nextQuestion()">
     </div>
 
-    <div id="result"></div>
+    <div id="result" ></div>
+    </div>
+    
 
     <script>
         // Show the first question when the page loads
