@@ -46,6 +46,7 @@ button{
   border: 1px solid #27627E;
   color: white;
 }
+
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -76,18 +77,30 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none;
+  /* list-style: none; */
   padding: 20px;
-  gap: 20px;
+
+  /* gap: 30px; */
+}
+ul{
+      display: flex;
+    list-style: none;
+    gap: 5.2rem;
 }
 
 li {
-  padding: 10px;
+  
+  padding: 5px;
   /* border: 2px solid black; */
+}
+.navbar ul li{
+  display: flex;
+  gap: 20px;
 }
 
 .navbar ul li:hover {
-  background-color: blanchedalmond;
+  /* background-color: blanchedalmond; */
+  color: #EB6694;
   cursor: pointer;
   border-radius: 20px;
 }
@@ -176,6 +189,7 @@ footer a {
     flex-direction: row;
     align-items: center;
     border: 1px solid #ddd;
+    background-color: rgb(230, 230, 230);
     
     overflow: hidden;
     transition: all 0.3s ease-in-out;
