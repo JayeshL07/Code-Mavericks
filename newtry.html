@@ -4,6 +4,8 @@
 <head>
     <title>Depression Screening</title>
     <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <script>
         var currentQuestion = 1;
         var totalScore = 0;
@@ -105,29 +107,111 @@
             return "0"; // Default value if none selected
         }
     </script>
+
 </head>
 
 <body>
-    <div class="cont">
+
+    <header class="top">
+        <div class="logods">
+          <img src="menu.svg" alt="" />
+          <img src="logo.png" width="150" alt="" />
+          <div class="btn">
+            <button class="button1">SIGN IN</button>
+            <button class="button">CAREERS</button>
+          </div>
+        </div>
+        <div class="separation"></div>
+        <nav class="navbar">
+          <a href="#">For adults<span></span></a>
+          <a href="#">For children<span></span></a>
+          <a href="#">About<span></span></a>
+          <a href="newtry.html">Mental Health Test<span></span></a>
+          <a href="#">Meditation<span></span></a>
+          <a href="#blogs-section">Blogs<span></span></a>
+          <a href="#">NHS Services<span></span></a>
+          <a href="#">Contact Us<span></span></a>
+        </nav>
+        <div class="separation"></div>
+      </header>
+
+   
+    
+
+<main>
+
+    <div class="cont" class="separation">
         <h1>Depression Screening</h1>
     <p>For each question, please select the option that best describes your experience over the past two weeks:</p>
     </div>
 
-    <div id="question-container" style="display: none;">
+    <div id="question-container" style="display: none">
         <h2 id="question-text"></h2>
-        <div id="options-container"></div>
+        <br><br>
+        <div id="options-container2"></div>
         <br><br>
         <input type="button" value="Next Question" onclick="nextQuestion()">
     </div>
 
     <div id="result" ></div>
     </div>
-    
+  <script>
+    // Show the first question when the page loads
+    showQuestion();
+</script>
 
-    <script>
-        // Show the first question when the page loads
-        showQuestion();
-    </script>
+</main>
+
+
+<!-- <footer>
+    <div class="footer-item">
+      <a href="faq">FAQ</a>
+      <a href="faq">Account</a>
+      <a href="faq">Investor Relations</a>
+      <a href="faq">Ways to Watch</a>
+      <a href="faq">Privacy</a>
+    </div>
+    <div class="footer-item">
+      <a href="faq">Corporate Information</a>
+      <a href="faq">Speed Test</a>
+      <a href="faq">Only on Netflix</a>
+      <a href="faq">Help Centre</a>
+      <a href="faq">Media Centre</a>
+    </div>
+    <div class="footer-item">
+      <a href="faq">Jobs</a>
+      <a href="faq">Terms of Uset</a>
+      <a href="faq">Cookie Preferences</a>
+      <a href="faq">Contact Us</a>
+      <a href="faq">Legal Notices</a>
+    </div>
+
+    <ul>
+      <li class="item">
+        <a href="#">
+          <i class="fa-brands fa-instagram icon"></i>
+        </a>
+      </li>
+      <li class="item">
+        <a href="#">
+          <i class="fa-brands fa-linkedin icon"></i>
+        </a>
+      </li>
+      <li class="item">
+          <a href="#">
+            <i class="fa-brands fa-youtube icon"></i>
+          </a>
+        </li>
+       <li class="item">
+        <a href="#">
+          <i class="fa-brands fa-x-twitter icon"></i>
+        </a>
+      </li>
+    </ul>
+
+  </footer> -->
+   
+
 </body>
 
 </html>

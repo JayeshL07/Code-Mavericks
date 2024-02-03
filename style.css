@@ -27,39 +27,33 @@
 
 */
 
-
-.button {
+.button1 {
   position: relative;
-  width: 8.1em;
-  border: 3px ridge;
-  /* color: gray; */
+  width: 8.5em;
+  border: 2px ridge;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: transparen;
-  transition: 1s;
-  border-radius: 10em;
+  background-color: YOUR_SOLID_COLOR; /* Replace with your desired solid color */
+  transition: background-color 1s;
+  border-radius: 1em;
   font-size: 15px;
   font-weight: bold;
   outline: none;
-
 }
 
-
-.button::after {
-
+.button1::after {
   content: "";
   position: absolute;
   transform-origin: center;
-  top: -10%;
+  top: -30%;
   left: 3%;
   width: 95%;
   height: 40%;
   background-color: white;
-  transition: 0.8s;
+  transition: transform 0.6s;
 }
 
-.button::before {
-
+.button1::before {
   content: "";
   position: absolute;
   transform-origin: center;
@@ -68,19 +62,72 @@
   width: 95%;
   height: 40%;
   background-color: white;
-  transition: 0.8s;
+  transition: transform 0.7s;
+}
+
+.button1:hover::before,
+.button1:hover::after {
+  transform: scale(0);
+}
+
+.button1:hover {
+  box-shadow: inset 0px 0px 5px ;
+  background-color: rgb(246, 143, 161); /* Replace with your desired solid color */
+}
+
+
+
+
+.button {
+  position: relative;
+  width: 8.5em;
+  border: 2px ridge;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: YOUR_SOLID_COLOR; /* Replace with your desired solid color */
+  transition: background-color 1s;
+  border-radius: 1em;
+  font-size: 15px;
+  font-weight: bold;
+  outline: none;
+  background-color: rgb(246, 143, 161);
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  transform-origin: center;
+  top: -30%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: white;
+  transition: transform 0.6s;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  transform-origin: center;
+  top: 90%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: white;
+  transition: transform 0.7s;
 }
 
 .button:hover::before,
-button:hover::after {
-
+.button:hover::after {
   transform: scale(0);
 }
 
 .button:hover {
-  box-shadow: inset 5px 5px 22px rgb(255, 23, 61);
-
+  box-shadow: inset 0px 0px 5px ;
+  background-color: gray; /* Replace with your desired solid color */
 }
+
+
 
 
 
@@ -186,9 +233,6 @@ a {
   justify-content: center;
   align-items: center;
   gap: 40px;
-
-
-
 }
 
 ul {
