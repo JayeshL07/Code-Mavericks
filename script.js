@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const readMoreBtns = document.querySelectorAll(".read-more-button");
 
@@ -8,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (window.getComputedStyle(hiddenContent).display === "none") {
         hiddenContent.style.display = "block";
+        animateText(hiddenContent);
         btn.innerHTML = "Read Less";
       } else {
         hiddenContent.style.display = "none";
@@ -15,7 +18,25 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  function animateText(element) {
+    const text = element.textContent;
+    element.innerHTML = "";
+
+    const lines = text.split("\n");
+
+    lines.forEach(function (line, index) {
+      setTimeout(function () {
+        element.innerHTML += line + "<br>";
+      }, index * 70); // You can adjust the interval (500 milliseconds in this example)
+    });
+
+    element.style.transition = "opacity 0.5s linear";
+    element.style.opacity = 1;
+  }
 });
+
+
 document.addEventListener("DOMContentLoaded", function () {
   var blogLink = document.querySelector('a[href="#blogs-section"]');
 
@@ -28,3 +49,4 @@ document.addEventListener("DOMContentLoaded", function () {
     blogsSection.scrollIntoView({ behavior: "smooth" });
   });
 });
+
