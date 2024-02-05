@@ -498,3 +498,56 @@ ul {
 .item:nth-child(3) {
   --bg-color: #000;
 }
+
+/* Books cards css */
+.b-card {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 70%;
+  margin-left: 200px;
+  position: relative;
+}
+
+.content-books {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.content-books h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 40px;
+}
+
+.content-books p {
+  margin-bottom: 20px;
+}
+
+.download-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+.books h1{
+  position: relative;
+  left: 180px;
+  padding: 15px;
+  font-size: 55px;
+}
