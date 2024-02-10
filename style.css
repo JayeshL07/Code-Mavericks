@@ -26,14 +26,14 @@
 }
 
 */
-
-.button1 {
+/* 
+ .button1 {
   position: relative;
   width: 8.5em;
   border: 2px ridge;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: YOUR_SOLID_COLOR; /* Replace with your desired solid color */
+  background-color: YOUR_SOLID_COLOR; 
   transition: background-color 1s;
   border-radius: 1em;
   font-size: 15px;
@@ -72,7 +72,7 @@
 
 .button1:hover {
   box-shadow: inset 0px 0px 5px ;
-  background-color: rgb(246, 143, 161); /* Replace with your desired solid color */
+  background-color: rgb(246, 143, 161); 
 }
 
 
@@ -84,7 +84,7 @@
   border: 2px ridge;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: YOUR_SOLID_COLOR; /* Replace with your desired solid color */
+  background-color: YOUR_SOLID_COLOR; 
   transition: background-color 1s;
   border-radius: 1em;
   font-size: 15px;
@@ -124,14 +124,103 @@
 
 .button:hover {
   box-shadow: inset 0px 0px 5px ;
-  background-color: gray; /* Replace with your desired solid color */
+  background-color: gray; 
 }
+  */
 
 
 
+  .btn41-43 {
+    padding: 10px 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border-radius:170px;
+  }
+  
 
 
 
+/* BUTTON 1 */
+
+
+  .btn-42 {
+    border: 2px solid rgb(255, 255, 255);
+    z-index: 1;
+    color: white;
+    background-color: rgb(246, 143, 161);
+  }
+  
+  .btn-42:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    background: #27627E;
+    border-radius:170px;
+    /* transition: all 0.3s ease; */
+  }
+  
+  .btn-42:hover {
+    color: white;
+  }
+  
+  .btn-42:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+  
+  .btn-42:active {
+    top: 2px;
+  }
+
+                              /* BUTTON 2 */
+  
+  
+  .btn-41 {
+    color: #EB6694;
+    border: 2px solid #EB6694;
+    z-index: 1;
+  }
+  
+  .btn-41:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    /* background: rgb(246, 143, 161); */
+    
+    /* transition: all 0.3s ease; */
+  }
+  
+  .btn-41:hover {
+    color: #27627E;
+    border: 2px solid #27627E;
+  }
+  
+  .btn-41:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+  
+  .btn-41:active {
+    top: 2px;
+  }
 
 
 
@@ -174,7 +263,7 @@
   border-radius: 15px;
   transform: scale(0) translate Y(50px);
   opacity: 0;
-  transition: 0.8s ease-in-out;
+  transition: 0.5s ease-in-out;
   justify-content: space-evenly;
 
 
