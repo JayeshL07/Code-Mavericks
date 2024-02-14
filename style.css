@@ -989,8 +989,47 @@ ul {
 
 
 /* Arti content */
+ .artcard1{
+   height: 350px;
+   width: 400px;
+   background-color: #943434;
+   border-radius: 20px;
+ }
+ .artcard2{
+   height: 350px;
+   width: 400px;
+   background-color: #943434;
+   border-radius: 20px;
+ }
+ .artcard3{
+   height: 350px;
+   width: 400px;
+   background-color: #943434;
+   border-radius: 20px;
+ }
 
-/* community css */
+
+ .artcontent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+
+ }
+
+ .art-rd{
+  background-color: var(--readbtnbg-color);
+  color: var(--readbtn-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  left: 130px;
+  top: 5px;
+ }
 
 
 
@@ -1068,4 +1107,25 @@ ul {
   left: 30%;
 }
 
+
+
+ .artinfo > h2{
+  padding: 10px;
+ }
+ .artimg1 > img{
+  /* border-radius: 20px; */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+ }
+ .artimg2 > img{
+  /* border-radius: 20px; */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+ }
+ .artimg3 > img{
+  /* border-radius: 20px; */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+ }
+ 
 
