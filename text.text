@@ -1,0 +1,49 @@
+.progress-container {
+    width: 83%;
+    height: 8px;
+    background-color: #ddd;
+    margin-top: 10px;
+    margin: 0px 65px;
+    position: relative;
+    bottom: 5px;
+}
+
+
+
+.css-ubjmia {
+    background: #FFFFFF;
+    border: 0.125rem solid transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 3rem;
+    line-height: 1.1em;
+    max-width: 20.4375rem;
+    overflow: hidden;
+    padding: calc((2.75rem - 1.1em) / 2) 1.5rem;
+    position: relative;
+    text-overflow: ellipsis;
+    -webkit-transition: color 150ms cubic-bezier(0.32, 0.94, 0.6, 1),background-color 150ms cubic-bezier(0.32, 0.94, 0.6, 1),border-color 150ms cubic-bezier(0.32, 0.94, 0.6, 1),box-shadow 150ms cubic-bezier(0.32, 0.94, 0.6, 1),-webkit-transform 150ms cubic-bezier(0.32, 0.94, 0.6, 1);
+    transition: color 150ms cubic-bezier(0.32, 0.94, 0.6, 1),background-color 150ms cubic-bezier(0.32, 0.94, 0.6, 1),border-color 150ms cubic-bezier(0.32, 0.94, 0.6, 1),box-shadow 150ms cubic-bezier(0.32, 0.94, 0.6, 1),transform 150ms cubic-bezier(0.32, 0.94, 0.6, 1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    background: #FF7300;
+    border-color: transparent;
+    border-radius: 2rem;
+    color: #FFFFFF;
+    opacity: 1;
+    border-radius: 50%;
+    height: 3rem;
+    max-width: 3rem;
+    padding: calc((2.75rem - 1.1em) / 2);
+    width: 3rem;
+    font-size: 1.5rem;
+    padding: calc((2.75rem - 1em) / 2);
+    line-height: 1rem;
+    top: 12px;
+    left: 10px;
+}
+
