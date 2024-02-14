@@ -163,7 +163,62 @@
   /* END */
 
 
+/* meditation */
 
+.msteps{
+  display: flow-root;
+  padding-top: 60px;
+  
+
+}
+
+.psteps{
+  
+  font-size: 15px;
+  font-weight: bold;
+  
+  
+}
+
+body{
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+}
+
+.medi1{
+  width:600px;
+  height: 550px;
+  float:left;
+  margin-left: 10px;
+  padding: 20px;
+  border-radius: 100%;
+}
+
+
+.mbeni{
+  display: flow-root; 
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.mbeni h2{
+  margin-left: 20PX;
+}
+
+.pbeni{
+  font-size: 20px;
+  font-weight: bold; 
+  margin-left: 20px;
+}
+
+.beni1{
+  width:600px;
+  height: 550px;
+  float:right;
+  margin-left: 10px;
+  padding: 20px;
+  border-radius: 100%;
+
+}
 
 
 
@@ -923,8 +978,8 @@ ul {
 
 /* MEDITATION */
 .box3{
-  background-color: whitesmoke;
-  height: 5000px ;
+  /* background-color: whitesmoke; */
+  height:auto;
 }
 
 .medbeni{
@@ -976,7 +1031,8 @@ ul {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   min-height: 70vh;
+   /* min-height: 70vh; */
+   height: 850px;
 }
 .posi_img{
   position: relative;
