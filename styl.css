@@ -5,9 +5,12 @@
 .qmain{
   display: flex;
   justify-content: center;
+  
+
   gap: 190px;
-  padding: 10px;
- 
+  padding: 100px;
+  padding-bottom: 100px;
+ /* position: absolute; */
 }
 
 
@@ -21,24 +24,30 @@
 /* display: flex; */
   position: relative; 
    left: 100px;
-  top: 190px; 
-  margin-top: 0px;
+  top: 300px;
+  bottom: 100px;
+
+  padding-bottom: 50ox;
+  
    /* margin-bottom: 200px  */
   
    width: 550px;
   border: 2px solid black;
   padding: 90px;
+  
+
   /* justify-content: center; */
   border-radius: 30px;
    
   transform: translate(-0%,-60%); 
-   margin-top: 140px; 
+   /* margin-top: 140px;  */
   
   
 }
 .options-container{
   display: flex;
   justify-content: flex-start;
+  
   gap: 20px;
 }
 
@@ -46,10 +55,10 @@
 .qmain > .cont{
    padding: 21px;
    position: absolute;
-    /* top:  100px; */
+    top:  200px;
    /* left: 200px;  */
    
-   /* flex-direction: row; */
+   /* flex-direction:column; */
    /* align-items: center; */
    border: 1px solid #ddd;
    margin-top: 10px;
@@ -375,6 +384,7 @@ p {
 footer {
   display: grid;
   position: relative;
+  bottom: 0px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   /* color: white; */
   max-width: 60vw;
