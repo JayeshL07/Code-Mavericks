@@ -1156,6 +1156,79 @@ ul {
 
 
 
- /* sign in and login css */
+ /* community css */
+ .commubox{
+  width: 90vw;
+  height: auto;
+  background-color: whitesmoke;
+  margin: auto;
+  
+
+}
+
+
+.commubox h2{
+  color: darkblue;
+  font-size: 30px;
+  margin-left: 70px;
+}
+
+.sec1 p {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 10px;
+  color: rgb(150, 33, 52);
+}
+
+.sec2 p{
+  font-size: 25px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.sec2 h3{
+  /* color: rgb(206, 121, 37); */
+  color: darkblue;
+  font-size: 25px;
+  margin-left: 70px;
+}
+
+.commubox ul{
+  font-size: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+  display: flex;
+  justify-content: top;
+  align-items: center;
+}
+
+
+.quote {
+  margin-left: 70px;
+  margin-right: 70px;
+  font-size: 20px;
+}
+
+.inq {
+  margin-left: 70px;
+  margin-right: 70px;
+  font-size: 20px;
+}
+
+
+
+.commbtn{
+  color: whitesmoke;
+  background-color: rgb(82, 72, 229);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  position: relative;
+  bottom: 35px;
+  left: 30%;
+}
 
  
