@@ -242,7 +242,8 @@
 }
 
 body{
-  background-color: var(--bodybg-color);
+  /* background-color: var(--bodybg-color); */
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
 }
 
 
@@ -992,19 +993,19 @@ ul {
  .artcard1{
    height: 350px;
    width: 400px;
-   background-color: #943434;
+   background-color: whitesmoke;
    border-radius: 20px;
  }
  .artcard2{
    height: 350px;
    width: 400px;
-   background-color: #943434;
+   background-color: whitesmoke;
    border-radius: 20px;
  }
  .artcard3{
    height: 350px;
    width: 400px;
-   background-color: #943434;
+   background-color: whitesmoke;
    border-radius: 20px;
  }
 
@@ -1049,4 +1050,56 @@ ul {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
  }
+ 
+
+
+
+ /* Support serve css */
+
+ .bookservices{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 120px;
+  /* background-color: whitesmoke; */
+ }
+
+ .bookservices > h2{
+  padding: 120px;
+ }
+
+ .bookservices img{
+  padding-left: 20px;
+  border-radius: 30px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* sign in and login css */
+
  
