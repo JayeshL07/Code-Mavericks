@@ -251,11 +251,13 @@ body{
   }
 
  :root{
+  --black-color:black;
+  --white-color:white;
   --sgbt41-color: #EB6694;
   --crtx42-color: white;
   --crbg42-color:  #EB6694;
   --sgcrhover-color: #27627E;
-  --nav-color: gray;
+  --nav-color: black;
   --navabr-color: rgb(255, 75, 105);
   --p-color: rgb(45, 11, 11);
   --ftr-color: rgb(189, 92, 124);
@@ -265,11 +267,12 @@ body{
   --blgshadow-color: rgba(0, 0, 0, 0.1);
   --readbtn-color: white;
   --readbtnbg-color:  #4CAF50;
-  --bodybg-color:white;
+  --bodybg-color:linear-gradient(to right, #e2e2e2, #c9d6ff);
   --blgtitle-color:  #000;
   --buybtn-color:  #fff; 
   --buybtnbg-color:  #4CAF50;
   --buybtnhover-color:  #3c8d40;
+  
 
 
 
@@ -281,7 +284,7 @@ body{
   --crtx42-color: #333;
   --crbg42-color: #FBC4D8;
   --sgcrhover-color: #D7E8F3;
-  --nav-color: #e3dede;
+  --nav-color: aqua;
   --navabr-color: rgb(255, 75, 105);
   --p-color: #EEE;
   --ftr-color: #A86D8A;
@@ -291,14 +294,16 @@ body{
   --blgshadow-color: rgba(255, 255, 255, 0.1);
   --readbtn-color: black;
   --readbtnbg-color: #4CAF50;
-  --bodybg-color:black;
+  --bodybg-color:linear-gradient(to right,#1c1738 , #3a2f5b);
   --blgtitle-color:  white;
+  --black-color:#7ed3d3;
+  
   
 }
 
 body{
   /* background-color: var(--bodybg-color); */
-  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  background:var(--bodybg-color) ;
 }
 
 
@@ -320,7 +325,7 @@ body{
  .toggle-label{
   width: 3rem;
   height: 2rem;
-  background-color: rgb(45, 43, 43);
+  background-color: rgb(91, 88, 88);
   display: inline-block;
   position: relative;
   border-radius: 10rem;
@@ -330,7 +335,7 @@ body{
   width:1rem;
   height: 1rem;
   border-radius: 50px;
-  background-color: white;
+  background-color: #9aace9;
   display: inline-block;
   position: absolute;
   top: .5rem;
@@ -1047,19 +1052,19 @@ ul {
 
 /* Arti content */
  .artcard1{
-   height: 350px;
+   height: 370px;
    width: 400px;
    background-color: whitesmoke;
    border-radius: 20px;
  }
  .artcard2{
-   height: 350px;
+   height: 370px;
    width: 400px;
    background-color: whitesmoke;
    border-radius: 20px;
  }
  .artcard3{
-   height: 350px;
+   height: 370px;
    width: 400px;
    background-color: whitesmoke;
    border-radius: 20px;
@@ -1086,6 +1091,10 @@ ul {
   position: relative;
   left: 130px;
   top: 5px;
+ }
+
+ .art-rd:hover{
+  background-color:var(--buybtnhover-color);
  }
 
  .artinfo > h2{
@@ -1121,15 +1130,57 @@ ul {
 
  .bookservices > h2{
   padding: 120px;
+  color:var(--black-color);
+  font-size: 40px;
  }
 
  .bookservices img{
-  padding-left: 20px;
+  /* padding-left: 20px; */
   border-radius: 30px;
+  position: relative;
+  left: 40px;
  }
 
 
+.mentalhtest{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 140px;
+}
 
+.mentalhtest > h2{
+  padding: 120px;
+  color:var(--black-color);
+  font-size: 40px;
+}
+
+ .mentalhtest img{
+  /* padding-right: 20px; */
+  border-radius: 30px;
+  position: relative;
+  right: 40px;
+ }
+
+ .community{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  
+ }
+
+ .community > h2{
+  padding: 120px;
+  color:var(--black-color);
+  font-size: 40px;
+ }
+
+  .community img{
+  /* padding-right: 20px; */
+  border-radius: 30px;
+  position: relative;
+  left: 40px;
+  }
 
 
 
