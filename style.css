@@ -709,6 +709,7 @@ footer {
   max-width: 60vw;
   margin: auto;
   padding: 34px;
+  margin-bottom: 10px;
 }
 
 .footer-item {
