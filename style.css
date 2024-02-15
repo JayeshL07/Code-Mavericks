@@ -1511,7 +1511,14 @@ select,
 
 /* exercise */
 
-.exer-beni > h1,h2{
+.exer-beni > h1{
+  /* margin-left: 500px;
+  padding-top: 20px; */
+text-align: center;
+width: 1000px;
+margin:auto;
+}
+.exer-beni > h2{
   /* margin-left: 500px;
   padding-top: 20px; */
 text-align: center;
