@@ -208,7 +208,7 @@
   --ftr-color: rgb(189, 92, 124);
   --socialmanubr-color: solid #27627E;
   --blgcardbr-color: solid #ddd;
-  --blgcardbg-color: rgb(230, 230, 230);
+  --blgcardbg-color:whitesmoke;
   --blgshadow-color: rgba(0, 0, 0, 0.1);
   --readbtn-color: white;
   --readbtnbg-color:  #4CAF50;
@@ -217,8 +217,11 @@
   --buybtn-color:  #fff; 
   --buybtnbg-color:  #4CAF50;
   --buybtnhover-color:  #3c8d40;
-  
 
+  --mcrdh4pspb-color: black;              /* med-card > h4 psteps pbeni  */
+  --commuboxbg-color: whitesmoke;         /* for commubox and books card bg*/
+  --blghead-color: black;
+  --bkh1-color:#000;
 
 
  }
@@ -235,14 +238,19 @@
   --ftr-color: #A86D8A;
   --socialmanubr-color: solid #D7E8F3;
   --blgcardbr-color: solid #555;
-  --blgcardbg-color: #333;
+  --blgcardbg-color:  rgb(181, 179, 179);
   --blgshadow-color: rgba(255, 255, 255, 0.1);
   --readbtn-color: black;
   --readbtnbg-color: #4CAF50;
   --bodybg-color:linear-gradient(to right,#1c1738 , #3a2f5b);
-  --blgtitle-color:  white;
+  --blgtitle-color:  black;
   --black-color:#7ed3d3;
-  
+
+  --mcrdh4pspb-color: white; 
+  --commuboxbg-color: rgb(181, 179, 179);
+  --blghead-color: white;
+  --bkh1-color:white;
+
   
 }
 
@@ -380,7 +388,7 @@
 
 
 
-  .btn41-43 {
+  .btn{
     padding: 10px 25px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -399,14 +407,14 @@
 /* BUTTON 1 */
 
 
-  .btn-42 {
-    border: 2px solid var(--crtx42-color);
+  .btn-2 {
+    /* border: 2px solid var(--crbg42-color); */
     z-index: 1;
     color:var(--crtx42-color);
     background-color:var(--crbg42-color) ;
   }
   
-  .btn-42:after {
+  .btn-2:after {
     position: absolute;
     content: "";
     width: 0;
@@ -420,30 +428,31 @@
     /* transition: all 0.3s ease; */
   }
   
-  .btn-42:hover {
+  .btn-2:hover {
     color: var(--crtx42-color);
   }
   
-  .btn-42:hover:after {
+  .btn-2:hover:after {
     left: auto;
     right: 0;
     width: 100%;
   }
   
-  .btn-42:active {
+  .btn-2:active {
     top: 2px;
   }
 
                               /* BUTTON 2 */
   
   
-  .btn-41 {
-    color: var(--sgbt41-color);
-    border: 2px solid var(--sgbt41-color);
+  .btn-1 {
+    color: white;
+    /* border: 2px solid var(--sgbt41-color); */
+    background-color:#27627E ;
     z-index: 1;
   }
   
-  .btn-41:after {
+  .btn-1:after {
     position: absolute;
     content: "";
     width: 0;
@@ -457,18 +466,20 @@
     /* transition: all 0.3s ease; */
   }
   
-  .btn-41:hover {
-    color: var(--sgcrhover-color);
-    border: 2px solid  var(--sgcrhover-color);
+  .btn-1:hover {
+    background-color: var(--crbg42-color);
+    /* border: 2px solid  var(--sgcrhover-color); */
+    color: white;
+    
   }
   
-  .btn-41:hover:after {
+  .btn-1:hover:after {
     left: auto;
     right: 0;
     width: 100%;
   }
   
-  .btn-41:active {
+  .btn-1:active {
     top: 2px;
   }
 
@@ -555,6 +566,10 @@ a {
   min-height: 100px;
 }
 
+.logods img{
+  margin-left: 50px;
+}
+
 .separation {
   background-color: black;
   height: 1px;
@@ -630,11 +645,12 @@ li {
   .box > p { 
     color: rgb(183, 243, 243);
     height: 100px;
-    width: 300px;
+    width: 500px;
     position: relative;
     left: 70px;
     top: 80px;
     font-weight: bolder ;
+    font-size: 40px;
   }
 /* .box > p {
   font-size: 20px;
@@ -698,7 +714,8 @@ footer a {
 
 .bloghead {
   padding: 30px;
-  color: var(--blgtitle-color);
+  color: var(--blghead-color);
+  font-size: 40px;
 }
 
 .blog-card {
@@ -869,7 +886,7 @@ ul {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  background-color: #f2f2f2;
+  background-color: var(--commuboxbg-color);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -914,9 +931,10 @@ ul {
 }
 .books h1{
   position: relative;
-  left: 180px;
+  left: 28%;
   padding: 5px;
   font-size: 55px;
+  color: var(--bkh1-color);
 }
 
 
@@ -959,6 +977,7 @@ ul {
   
   font-size: 20px;
   font-weight: bold;
+  color:var(--mcrdh4pspb-color);
   
   
 }
@@ -994,6 +1013,7 @@ body{
   font-size: 20px;
   font-weight: bold; 
   margin-left: 20px;
+  color: var(--mcrdh4pspb-color);
 }
 
 .beni1{
@@ -1036,6 +1056,11 @@ body{
   color: #45a049;
 }
 
+.med-card h4{
+  color:var(--mcrdh4pspb-color);
+  font-size: 20px;
+}
+
 .med-card p{
   position: absolute;
   left: 90px;
@@ -1071,6 +1096,9 @@ body{
    /* min-height: 70vh; */
    height: 850px;
 }
+
+
+
 .posi_img{
   position: relative;
   right: 100px;
@@ -1214,6 +1242,8 @@ body{
   left: 40px;
   }
 
+  
+
 
 
 
@@ -1243,7 +1273,7 @@ body{
  .commubox{
   width: 90vw;
   height: auto;
-  background-color: whitesmoke;
+  background-color:var(--commuboxbg-color);
   margin: auto;
   
 
