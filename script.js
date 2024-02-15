@@ -84,6 +84,7 @@ function findExperts() {
     { name: 'Dr. Patel', specialty: 'Psychiatrist', location: 'Pune', contact: 'drpatel@example.com' },
     { name: 'Dr. Deshmukh', specialty: 'Clinical Psychologist', location: 'Pune', contact: 'drdeshmukh@example.com' },
     { name: 'Dr. Sharma', specialty: 'Clinical Psychologist', location: 'Pune', contact: 'drsharma@example.com' },
+    { name: 'Dr. Sharma', specialty: 'Clinical Psychologist', location: 'Pune', contact: 'drsharma@example.com' },
     { name: 'Dr. Gupta', specialty: 'Clinical Psychologist', location: 'Mumbai', contact: 'drgupta@example.com' },
     { name: 'Dr. Kumar', specialty: 'Clinical Psychologist', location: 'Mumbai', contact: 'drkumar@example.com' },
     { name: 'Dr. Deshpande', specialty: 'Clinical Psychologist', location: 'Mumbai', contact: 'dreshpande@example.com' }
