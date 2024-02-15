@@ -1343,3 +1343,75 @@ body{
   bottom: 35px;
   left: 30%;
 }
+
+
+
+/* experts */
+.containerexp {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  height: 1000px;
+}
+
+.containerexp h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.location-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: 16px;
+  color: #555;
+}
+
+select,
+.expbtn {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.expbtn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.expbtn:hover {
+  background-color: #0056b3;
+}
+
+.expert-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.expert-item {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  max-width: 300px;
+}
+
+.map {
+  margin-top: 30px;
+}
+
+
