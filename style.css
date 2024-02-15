@@ -1454,3 +1454,36 @@ select,
 }
 
 
+
+
+
+/* podcast */
+.podk{
+  background-blend-mode:lighten;
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+  gap: 20px; /* Adjust the gap between divs */
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  background-color: transparent;
+}
+
+.podkh1 {
+  grid-column: span 2; /* Make the title span across two columns */
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.podkh2{
+  text-align: center;
+  color:  black;
+}
+
+
+.grid-item {
+  border: 1px solid rgb(75, 67, 67); /* Add a border for better visibility */
+  padding: 20px;
+  text-align: center;
+}
