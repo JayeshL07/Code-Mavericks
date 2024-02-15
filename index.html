@@ -20,7 +20,8 @@
       <img src="logo.png" width="160" alt="" />
       <div class="btn">
         <a href="sign_in.html" class="btn btn-1"> Sign in </a>
-        <a href="/buttons/41" class="btn btn-2"> Careers </a>
+        <a href="#exp" class="btn btn-2">Find Experts</a>
+        <!-- <nav class="navbar btn btn-2" id="expfinbtn"><a href="#exp">Find Experts</a></nav> -->
       </div>
     </div>
     <div class="separation"></div>
@@ -41,7 +42,7 @@
       <a href="#home">Home<span></span></a>
       <!-- <a href="#">For adults<span></span></a> -->
       
-      <a href="#">About<span></span></a>
+      <!-- <a href="#">About<span></span></a> -->
       <!-- <a href="newtry.html">Mental Health Test<span></span></a> -->
       <a href="#mtest">Mental Health Test<span></span></a>
       <!-- <a href="#">Meditation<span></span></a> -->
@@ -49,6 +50,7 @@
       <a href="#blogs">Blogs<span></span></a>
       <a href="#books">Books<span></span></a>
       <a href="#community">Community<span></span></a>
+      <a href="#exp">Find Experts<span></span></a>
 
       <a href="#">Contact Us<span></span></a>
     </nav>
@@ -761,6 +763,34 @@
           <br>
         </div>
 </div>
+</section>
+<section id="exp" style="display: none;">
+  <div class="containerexp">
+            <h1>Find Mental Health Experts</h1>
+            <div class="location-form">
+                <label for="location">Choose your location:</label>
+                <select id="location">
+                    <option value="Pune">Pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <!-- Add more location options here -->
+                </select>
+                <button class="expbtn" onclick="findExperts()">Find Experts</button>
+            </div>
+        
+            <!-- Expert Listings -->
+            <div class="expert-list">
+                <!-- Display expert information dynamically using JavaScript -->
+            </div>
+        
+            <!-- Embedded Map -->
+            <div class="map">
+                <!-- Integrate Google Maps or other map services here -->
+            </div>
+            <script>
+                // JavaScript to fetch and display expert data
+            </script>
+        </div>
+  
 </section>
   </main>
   <footer>
