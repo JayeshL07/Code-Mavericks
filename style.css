@@ -165,61 +165,6 @@
 
 /* meditation */
 
-.msteps{
-  display: flow-root;
-  padding-top: 60px;
-  
-
-}
-
-.psteps{
-  
-  font-size: 15px;
-  font-weight: bold;
-  
-  
-}
-
-body{
-  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
-}
-
-.medi1{
-  width:600px;
-  height: 550px;
-  float:left;
-  margin-left: 10px;
-  padding: 20px;
-  border-radius: 100%;
-}
-
-
-.mbeni{
-  display: flow-root; 
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.mbeni h2{
-  margin-left: 20PX;
-}
-
-.pbeni{
-  font-size: 20px;
-  font-weight: bold; 
-  margin-left: 20px;
-}
-
-.beni1{
-  width:600px;
-  height: 550px;
-  float:right;
-  margin-left: 10px;
-  padding: 20px;
-  border-radius: 100%;
-
-}
-
 
 
 
@@ -301,10 +246,7 @@ body{
   
 }
 
-body{
-  /* background-color: var(--bodybg-color); */
-  background:var(--bodybg-color) ;
-}
+
 
 
  /* toggle button  */
@@ -982,10 +924,89 @@ ul {
 
 
 /* MEDITATION */
+
+
+
 .box3{
   /* background-color: whitesmoke; */
   height:auto;
 }
+
+
+
+.medmainh h1{
+  display: flex;
+  justify-content: center;
+  color: #45a049;
+  font-weight: bold;
+  
+}
+
+.msteps{
+  display: flow-root;
+  padding-top: 60px;
+  
+
+}
+
+.msteps h2{
+  text-decoration: underline;
+  font-size: 30px;
+  color:  #45a049;
+}
+
+.psteps{
+  
+  font-size: 20px;
+  font-weight: bold;
+  
+  
+}
+
+body{
+  background: var(--bodybg-color);
+}
+
+.medi1{
+  width:600px;
+  height: 550px;
+  float:left;
+  margin-left: 10px;
+  padding: 20px;
+  border-radius: 100%;
+}
+
+
+.mbeni{
+  display: flow-root; 
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.mbeni h2{
+  text-decoration: underline;
+  font-size: 30px;
+  color:  #45a049;
+  margin-left: 20px;
+}
+
+.pbeni{
+  font-size: 20px;
+  font-weight: bold; 
+  margin-left: 20px;
+}
+
+.beni1{
+  width:600px;
+  height: 550px;
+  float:right;
+  margin-left: 10px;
+  padding: 20px;
+  border-radius: 100%;
+
+}
+
+
 
 .medbeni{
   width: 800px;
@@ -1010,6 +1031,11 @@ ul {
   top: 50px;
 }
 
+.med-card h1{
+  font-weight: bold;
+  color: #45a049;
+}
+
 .med-card p{
   position: absolute;
   left: 90px;
@@ -1019,9 +1045,15 @@ ul {
   height: 700px;
     position: relative;
     width: 1025px;
-    left: 350px;
+    /* left: 350px; */
     top: 100px;
 }
+
+.medimg{
+  position: relative;
+  left: 25%;
+}
+
 /* 
     position: absolute;
     left: 0px;
@@ -1041,8 +1073,8 @@ ul {
 }
 .posi_img{
   position: relative;
-  right: 200px;
-  top: 100px;
+  right: 100px;
+  top: 80px;
   opacity: 1;
   transition: opacity 1ms ease 1ms;
 }
@@ -1281,5 +1313,3 @@ ul {
   bottom: 35px;
   left: 30%;
 }
-
- 
