@@ -90,7 +90,57 @@ function findExperts() {
     { name: 'Dr. Sharma', specialty: 'Clinical Psychologist', location: 'Pune', contact: 'drsharma@example.com' },
     { name: 'Dr. Gupta', specialty: 'Clinical Psychologist', location: 'Mumbai', contact: 'drgupta@example.com' },
     { name: 'Dr. Kumar', specialty: 'Clinical Psychologist', location: 'Mumbai', contact: 'drkumar@example.com' },
-    { name: 'Dr. Deshpande', specialty: 'Clinical Psychologist', location: 'Mumbai', contact: 'dreshpande@example.com' }
+    { name: 'Dr. Deshpande', specialty: 'Clinical Psychologist', location: 'Mumbai', contact: 'dreshpande@example.com' },
+    { name: 'Dr. Mehta', specialty: 'Psychiatrist', location: 'Mumbai', contact: 'drmehta@example.com' },
+{ name: 'Dr. Joshi', specialty: 'Clinical Psychologist', location: 'Mumbai', contact: 'drjoshi@example.com' },
+{ name: 'Dr. Shah', specialty: 'Clinical Psychologist', location: 'Mumbai', contact: 'drshah@example.com' },
+{ name: 'Dr. Patel', specialty: 'Clinical Psychologist', location: 'Mumbai', contact: 'drpatel_mum@example.com' },
+{ name: 'Dr. Malhotra', specialty: 'Psychiatrist', location: 'Mumbai', contact: 'drmalhotra_mum@example.com' },
+{ name: 'Dr. Verma', specialty: 'Psychiatrist', location: 'Delhi', contact: 'drverma@example.com' },
+{ name: 'Dr. Khanna', specialty: 'Clinical Psychologist', location: 'Delhi', contact: 'drkhanna@example.com' },
+{ name: 'Dr. Singh', specialty: 'Clinical Psychologist', location: 'Delhi', contact: 'drsingh@example.com' },
+{ name: 'Dr. Kapoor', specialty: 'Clinical Psychologist', location: 'Delhi', contact: 'drkapoor@example.com' },
+{ name: 'Dr. Ahuja', specialty: 'Psychiatrist', location: 'Delhi', contact: 'drahuja@example.com' },
+{ name: 'Dr. Banerjee', specialty: 'Psychiatrist', location: 'Kolkata', contact: 'drbanerjee@example.com' },
+{ name: 'Dr. Dasgupta', specialty: 'Clinical Psychologist', location: 'Kolkata', contact: 'drdasgupta@example.com' },
+{ name: 'Dr. Chatterjee', specialty: 'Clinical Psychologist', location: 'Kolkata', contact: 'drchatterjee@example.com' },
+{ name: 'Dr. Sen', specialty: 'Clinical Psychologist', location: 'Kolkata', contact: 'drsen@example.com' },
+{ name: 'Dr. Mukherjee', specialty: 'Psychiatrist', location: 'Kolkata', contact: 'drmukherjee@example.com' },
+{ name: 'Dr. Subramanian', specialty: 'Psychiatrist', location: 'Chennai', contact: 'drsubramanian@example.com' },
+{ name: 'Dr. Krishnan', specialty: 'Clinical Psychologist', location: 'Chennai', contact: 'drkrishnan@example.com' },
+{ name: 'Dr. Rajan', specialty: 'Clinical Psychologist', location: 'Chennai', contact: 'drrajan@example.com' },
+{ name: 'Dr. Nair', specialty: 'Clinical Psychologist', location: 'Chennai', contact: 'drnair@example.com' },
+{ name: 'Dr. Pillai', specialty: 'Psychiatrist', location: 'Chennai', contact: 'drpillai@example.com' },
+{ name: 'Dr. Rao', specialty: 'Psychiatrist', location: 'Bangalore', contact: 'drrao@example.com' },
+{ name: 'Dr. Reddy', specialty: 'Clinical Psychologist', location: 'Bangalore', contact: 'drreddy@example.com' },
+{ name: 'Dr. Kumar', specialty: 'Clinical Psychologist', location: 'Bangalore', contact: 'drkumar_blr@example.com' },
+{ name: 'Dr. Prasad', specialty: 'Clinical Psychologist', location: 'Bangalore', contact: 'drprasad@example.com' },
+{ name: 'Dr. Venkat', specialty: 'Psychiatrist', location: 'Bangalore', contact: 'drvenkat@example.com' },
+{ name: 'Dr. Reddy', specialty: 'Psychiatrist', location: 'Hyderabad', contact: 'drreddy_hyd@example.com' },
+{ name: 'Dr. Kumar', specialty: 'Clinical Psychologist', location: 'Hyderabad', contact: 'drkumar_hyd@example.com' },
+{ name: 'Dr. Rao', specialty: 'Clinical Psychologist', location: 'Hyderabad', contact: 'drrao_hyd@example.com' },
+{ name: 'Dr. Sharma', specialty: 'Clinical Psychologist', location: 'Hyderabad', contact: 'drsharma_hyd@example.com' },
+{ name: 'Dr. Patel', specialty: 'Psychiatrist', location: 'Hyderabad', contact: 'drpatel_hyd@example.com' },
+{ name: 'Dr. Shah', specialty: 'Psychiatrist', location: 'Ahmedabad', contact: 'drshah_ahd@example.com' },
+{ name: 'Dr. Patel', specialty: 'Clinical Psychologist', location: 'Ahmedabad', contact: 'drpatel_ahd@example.com' },
+{ name: 'Dr. Desai', specialty: 'Clinical Psychologist', location: 'Ahmedabad', contact: 'drdesai@example.com' },
+{ name: 'Dr. Joshi', specialty: 'Clinical Psychologist', location: 'Ahmedabad', contact: 'drjoshi_ahd@example.com' },
+{ name: 'Dr. Mehta', specialty: 'Psychiatrist', location: 'Ahmedabad', contact: 'drmehta_ahd@example.com' },
+{ name: 'Dr. Joshi', specialty: 'Psychiatrist', location: 'Pune', contact: 'drjoshi_pune@example.com' },
+{ name: 'Dr. Sharma', specialty: 'Clinical Psychologist', location: 'Pune', contact: 'drsharma_pune@example.com' },
+{ name: 'Dr. Deshmukh', specialty: 'Clinical Psychologist', location: 'Pune', contact: 'drdeshmukh_pune@example.com' },
+{ name: 'Dr. Gupta', specialty: 'Clinical Psychologist', location: 'Pune', contact: 'drgupta_pune@example.com' },
+{ name: 'Dr. Singh', specialty: 'Psychiatrist', location: 'Pune', contact: 'drsingh_pune@example.com' },
+{ name: 'Dr. Patel', specialty: 'Psychiatrist', location: 'Surat', contact: 'drpatel_surat@example.com' },
+{ name: 'Dr. Shah', specialty: 'Clinical Psychologist', location: 'Surat', contact: 'drshah_surat@example.com' },
+{ name: 'Dr. Desai', specialty: 'Clinical Psychologist', location: 'Surat', contact: 'drdesai_surat@example.com' },
+{ name: 'Dr. Mehta', specialty: 'Clinical Psychologist', location: 'Surat', contact: 'drmehta_surat@example.com' },
+{ name: 'Dr. Joshi', specialty: 'Psychiatrist', location: 'Surat', contact: 'drjoshi_surat@example.com' },
+{ name: 'Dr. Singh', specialty: 'Psychiatrist', location: 'Jaipur', contact: 'drsingh_jaipur@example.com' },
+{ name: 'Dr. Sharma', specialty: 'Clinical Psychologist', location: 'Jaipur', contact: 'drsharma_jaipur@example.com' },
+{ name: 'Dr. Agarwal', specialty: 'Clinical Psychologist', location: 'Jaipur', contact: 'dragarwal@example.com' },
+{ name: 'Dr. Gupta', specialty: 'Clinical Psychologist', location: 'Jaipur', contact: 'drgupta_jaipur@example.com' },
+{ name: 'Dr. Choudhary', specialty: 'Psychiatrist', location: 'Jaipur', contact: 'drchoudhary@example.com' },
     // Add more experts here
   ];
 
@@ -119,11 +169,28 @@ function findExperts() {
 
 // Function to get the embedded map based on the selected location
 function getEmbeddedMap(location) {
-  if (location === 'Pune') {
-    return '<iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d121067.51147720689!2d73.76674977842882!3d18.512639019032644!3m2!1i1024!2i768!4f13.1!2m1!1smental%20health%20experts%20pune!5e0!3m2!1sen!2sin!4v1708000002416!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
-  } else if (location === 'Mumbai') {
+  if (location === 'Mumbai') {
     return '<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d170655.49287580253!2d72.76813426710646!3d19.0642098995867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smental%20health%20experts%20mumbai!5e0!3m2!1sen!2sin!4v1708000096863!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
-  } else {
+} else if (location === 'Delhi') {
+    return '<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d350588.7774337086!2d77.11470313514485!3d28.647279076488113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smental%20health%20experts%20delhi!5e0!3m2!1sen!2sin!4v1708000171393!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+} else if (location === 'Kolkata') {
+    return '<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d294346.67620435365!2d88.3104221716827!3d22.579660799297086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smental%20health%20experts%20kolkata!5e0!3m2!1sen!2sin!4v1708000246806!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+} else if (location === 'Chennai') {
+    return '<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d395846.028147401!2d80.2272779070854!3d13.06743974980864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smental%20health%20experts%20chennai!5e0!3m2!1sen!2sin!4v1708000322942!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+} else if (location === 'Bangalore') {
+    return '<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1242915.806218972!2d77.4807683843772!3d12.97244217565311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smental%20health%20experts%20bangalore!5e0!3m2!1sen!2sin!4v1708000395729!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+} else if (location === 'Hyderabad') {
+    return '<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d981259.1085827054!2d78.38987244849748!3d17.41262772338461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smental%20health%20experts%20hyderabad!5e0!3m2!1sen!2sin!4v1708000468059!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+} else if (location === 'Ahmedabad') {
+    return '<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1906750.1017297194!2d72.5379321779909!3d23.03836028331542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smental%20health%20experts%20ahmedabad!5e0!3m2!1sen!2sin!4v1708000542034!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+} else if (location === 'Pune') {
+    return '<iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d121067.51147720689!2d73.76674977842882!3d18.512639019032644!3m2!1i1024!2i768!4f13.1!2m1!1smental%20health%20experts%20pune!5e0!3m2!1sen!2sin!4v1708000002416!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+} else if (location === 'Surat') {
+    return '<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1241961.799819905!2d72.7588619721531!3d21.191323255783117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smental%20health%20experts%20surat!5e0!3m2!1sen!2sin!4v1708000616510!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+} else if (location === 'Jaipur') {
+    return '<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2450076.8629283613!2d75.51755186187957!3d26.9124339364232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smental%20health%20experts%20jaipur!5e0!3m2!1sen!2sin!4v1708000688824!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+}
+ else {
     return ''; // Default to an empty string for other locations
   }
 }
