@@ -231,6 +231,8 @@
 
   --exhmpgartip-color:black;
 
+  --separation-color:black;
+
  }
 
  .dark-mode {
@@ -265,6 +267,8 @@
   --exeallfont-color:white;
 
   --exhmpgartip-color:white;
+
+  --separation-color:whitesmoke;
 
 }
 
@@ -623,7 +627,7 @@ a {
 }
 
 .separation {
-  background-color: black;
+  background-color: var(--separation-color);
   height: 1px;
 }
 
@@ -917,7 +921,7 @@ ul {
 }
 
 .item a:hover .icon {
-  color: var(--itemhover-color);
+  color: white;
   transform: rotateY(360deg);
 }
 
