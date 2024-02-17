@@ -979,11 +979,13 @@ ul {
 }
 .books h1{
   position: relative;
-  left: 28%;
+  left: 400px;
+  width: 560;
   padding: 5px;
   font-size: 55px;
   color: var(--bkh1-color);
-}
+}     
+
 
 
 

@@ -49,11 +49,10 @@ document.addEventListener("DOMContentLoaded", function () {
     blogsSection.scrollIntoView({ behavior: "smooth" });
   });
 });
-
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll('section');
 
-  document.querySelectorAll('nav a, span a').forEach(anchor => {
+  document.querySelectorAll('nav a, span a, footer a').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
           e.preventDefault();
 
@@ -62,7 +61,11 @@ document.addEventListener("DOMContentLoaded", function () {
               section.style.display = 'none';
           });
 
-          document.getElementById(targetId).style.display = 'block';
+          const targetSection = document.getElementById(targetId);
+          targetSection.style.display = 'block';
+
+          // Scroll to the top of the target section with smooth scrolling
+          targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
   });
 });
@@ -124,3 +127,140 @@ function getEmbeddedMap(location) {
     return ''; // Default to an empty string for other locations
   }
 }
+
+
+
+
+
+
+
+
+var currentQuestion = 1;
+var totalScore = 0;
+var ind=1;
+
+function showQuestion() {
+    document.getElementById("question-number").innerHTML = currentQuestion;
+    var questionContainer = document.getElementById("question-container");
+    var questionText = document.getElementById("question-text");
+    var optionsContainer = document.getElementById("options-container");
+    var submitButton = document.getElementById("submit-button");
+  
+
+    switch (currentQuestion) {
+        case 1:
+            questionText.innerHTML = "Little interest or pleasure in doing things?";
+            break;
+        case 2:
+            questionText.innerHTML = "Feeling down, depressed, or hopeless?";
+            break;
+        case 3:
+            questionText.innerHTML = "Trouble falling or staying asleep, or sleeping too much?";
+            break;
+        case 4:
+            questionText.innerHTML = "Feeling tired or having little energy?";
+            break;
+        case 5:
+            questionText.innerHTML = "Poor appetite or overeating?";
+            break;
+        case 6:
+            questionText.innerHTML = "Feeling bad about yourself - or that you are a failure or have let yourself or your family down?";
+            break;
+        case 7:
+            questionText.innerHTML = "Trouble concentrating on things, such as reading the newspaper or watching television?";
+            break;
+        case 8:
+            questionText.innerHTML = "Moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?";
+            break;
+        case 9:
+            questionText.innerHTML = "Thoughts that you would be better off dead, or of hurting yourself in some way?";
+            submitButton.value = "Get Results";
+            break;
+    }
+
+    // Display options
+    optionsContainer.innerHTML = "";
+    for (var i = 0; i < 4; i++) {
+        var optionButton = document.createElement("button");
+        optionButton.type = "button";
+        optionButton.innerHTML = getOptionLabel(i);
+        optionButton.onclick = function (index) {
+            return function () {
+                handleButtonClick(index);
+            };
+        }(i);
+        optionsContainer.appendChild(optionButton);
+
+
+        optionButton.classList.add("button");
+        optionsContainer.appendChild(optionButton);
+
+    }
+
+    // Show question container
+    questionContainer.style.display = "block";
+}
+
+function handleButtonClick(index) {
+    var selectedValue = index;
+    totalScore += parseInt(selectedValue);
+
+    // Automatically move to the next question
+    nextQuestion();
+}
+
+function nextQuestion() {
+    var selectedButton = document.querySelector("#options-container button[style='background-color: lightblue;']");
+    if (selectedButton) {
+        selectedButton.style.backgroundColor = ""; // Reset the background color
+    }
+
+    for(var i=0;i<1;i++){
+
+    currentQuestion++;
+    if (currentQuestion <= 9) {
+        showQuestion();
+    } else {
+        if (ind < 10) {
+            break;
+        } else {
+            calculateScore();
+            break; // Call the calculateScore function when all questions are answered
+        }
+    }
+
+    ind=ind+1;
+    }
+}
+
+var getResultsButton = document.getElementById("submit-button");
+getResultsButton.addEventListener("click", function () {
+    calculateScore();
+});
+
+
+function calculateScore() {
+    var resultContainer = document.getElementById("result");
+    if (totalScore <= 9) {
+        resultContainer.innerHTML = "Your total score is <strong class=strong1>" + totalScore + "</strong> . You have <strong class=strong1>minimal depressive symptoms</strong>.";
+    } else if (totalScore <= 18) {
+        resultContainer.innerHTML = "Your total score is <strong class=strong2>" + totalScore + "</strong> . You may be experiencing <strong class=strong2>mild to moderate depressive symptoms</strong>. Consider seeking support.";
+    } else {
+        resultContainer.innerHTML = "Your total score is <strong class=strong3>" + totalScore + "</strong> . You may be experiencing <strong class=strong3>significant depressive symptoms. Please seek professional help</strong>.";
+    }
+}
+
+function getOptionLabel(index) {
+    switch (index) {
+        case 0:
+            return "Not at all";
+        case 1:
+            return "Several days";
+        case 2:
+            return "More than half the days";
+        case 3:
+            return "Nearly every day";
+    }
+}
+
+showQuestion();
