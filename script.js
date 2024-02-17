@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll('section');
 
-  document.querySelectorAll('nav a, span a, footer a').forEach(anchor => {
+  document.querySelectorAll('nav a, span a, footer a, .articles a').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
           e.preventDefault();
 

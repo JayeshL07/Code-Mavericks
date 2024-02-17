@@ -229,6 +229,8 @@
 
   --exeallfont-color:black;
 
+  --exhmpgartip-color:black;
+
  }
 
  .dark-mode {
@@ -261,6 +263,9 @@
   --qh3-color: #d6e946;
 
   --exeallfont-color:white;
+
+  --exhmpgartip-color:white;
+
 }
 
 
@@ -1758,3 +1763,30 @@ box-shadow: 0px 5px 10px #936b6b;
   font-weight: bolder;
   /* text-decoration: underline; */
 }
+
+/* home page articles */
+
+.ex-cont1-arti{
+  margin-left: 185px;
+}
+
+.ex-cont1-arti h2{
+  color:rgb(223, 74, 60);
+}
+.ex-cont1-arti h1{
+  color:rgb(223, 74, 60);
+}
+.ex-cont1-arti p{
+  color:var(--exhmpgartip-color);
+}
+
+.para  p  ul li{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.ex-cont1-arti h3{
+  color:rgb(223, 74, 60) ;
+}
+
