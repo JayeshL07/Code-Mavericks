@@ -1246,9 +1246,9 @@ body{
 
  .bookservices img{
   /* padding-left: 20px; */
-  border-radius: 30px;
   position: relative;
   left: 40px;
+  box-shadow: 0px 0px 15px black;
  }
 
 
@@ -1266,9 +1266,10 @@ body{
 
  .mentalhtest img{
   /* padding-right: 20px; */
-  border-radius: 30px;
+  
   position: relative;
   right: 40px;
+  box-shadow: 0px 0px 15px black;
  }
 
  .community{
@@ -1287,9 +1288,9 @@ body{
 
   .community img{
   /* padding-right: 20px; */
-  border-radius: 30px;
   position: relative;
   left: 40px;
+  box-shadow: 0px 0px 15px black;
   }
 
   
