@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll('section');
 
-  document.querySelectorAll('nav a, span a, footer a, .articles a').forEach(anchor => {
+  document.querySelectorAll('nav a, span a, footer a, .articles a, .lodoh a').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
           e.preventDefault();
 
@@ -201,7 +201,6 @@ function getEmbeddedMap(location) {
 
 
 
-
 var currentQuestion = 1;
 var totalScore = 0;
 var ind=1;
@@ -269,8 +268,11 @@ function showQuestion() {
 }
 
 function handleButtonClick(index) {
+   
     var selectedValue = index;
+    if(ind <= 9){ 
     totalScore += parseInt(selectedValue);
+    }
 
     // Automatically move to the next question
     nextQuestion();
@@ -282,10 +284,12 @@ function nextQuestion() {
         selectedButton.style.backgroundColor = ""; // Reset the background color
     }
 
+    if(ind <= 9){ 
     for(var i=0;i<1;i++){
-
+      
+       
     currentQuestion++;
-    if (currentQuestion <= 9) {
+    if (currentQuestion < 10) {
         showQuestion();
     } else {
         if (ind < 10) {
@@ -295,14 +299,19 @@ function nextQuestion() {
             break; // Call the calculateScore function when all questions are answered
         }
     }
-
-    ind=ind+1;
+  
     }
-}
+    ind=ind+1;
+}};
+
 
 var getResultsButton = document.getElementById("submit-button");
 getResultsButton.addEventListener("click", function () {
+    if( ind >=9){ 
+          
     calculateScore();
+   
+    }
 });
 
 
@@ -331,3 +340,28 @@ function getOptionLabel(index) {
 }
 
 showQuestion();
+
+
+
+// Get a reference to the Firebase authentication service
+var auth = firebase.auth();
+
+// Set up an observer to check for changes in the user's sign-in status
+auth.onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in
+    console.log('User is signed in:', user);
+  } else {
+    // User is signed out
+    console.log('User is signed out');
+  }
+});
+
+
+
+const userNameElement = document.getElementById("user-name");
+
+// Set the innerHTML of the element to the user's name
+userNameElement.innerHTML = user.name;
+
+

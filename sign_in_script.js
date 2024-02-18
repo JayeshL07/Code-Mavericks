@@ -127,4 +127,30 @@ const firebaseConfig = {
     }
   }*/
 
-  
+  document.addEventListener('DOMContentLoaded', function () {
+    // Get the logout button element
+    const logoutBtn = document.getElementById('logoutBtn');
+
+    // Check the authentication state on page load
+    firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+            // User is signed in, show the logout button
+            logoutBtn.style.display = 'block';
+        } else {
+            // User is signed out, hide the logout button
+            logoutBtn.style.display = 'none';
+        }
+    });
+});
+
+
+// Set up an observer to check for changes in the user's sign-in status
+firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+        // User is signed in, show the logout button
+        logoutBtn.style.display = 'block';
+    } else {
+        // User is signed out, hide the logout button
+        logoutBtn.style.display = 'none';
+    }
+});
