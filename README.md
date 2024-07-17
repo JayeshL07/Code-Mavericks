@@ -1,2 +1,2 @@
 # Code-Mavericks
-hackathon
+Hackathon AISSMS FEB 2024
